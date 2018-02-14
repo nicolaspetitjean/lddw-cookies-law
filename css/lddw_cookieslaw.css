@@ -1,0 +1,156 @@
+.lddw-cookies-notice {
+  position: fixed;
+  z-index: 1000;
+  bottom: 10px;
+  left: 10px;
+  width: 300px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+}
+
+.lddw-cookies-notice.lddw-cookies-notice-banner {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 5px;
+}
+
+.lddw-cookies-notice.lddw-cookies-notice-banner .lddw-cookie-title {
+  font-size: 1em;
+}
+
+.lddw-cookies-notice.lddw-cookies-notice-banner p {
+  font-size: .9em;
+  margin: 0;
+}
+
+.lddw-cookies-notice.lddw-cookies-notice-banner .lddw-cookie-buttons {
+  margin-top: 5px;
+}
+
+.lddw-cookies-notice .lddw-cookie-title {
+  color: white;
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+.lddw-cookies-notice p {
+  margin: 10px 0 0 0;
+  line-height: 1.5;
+}
+
+.lddw-cookies-notice .lddw-cookie-buttons {
+  margin-top: 15px;
+}
+
+.lddw-cookies-notice .lddw-cookie-close {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  cursor: pointer;
+}
+
+.lddw-cookies-notice .lddw-button {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: transparent;
+  font-weight: 300;
+  white-space: nowrap;
+  padding: 6px 12px;
+  line-height: 1.5;
+  transition: background-color 0.2s ease 0s;
+  -moz-user-select: none;
+  color: white;
+  fill: white;
+  border: 1px solid #349dd7;
+}
+
+.lddw-cookies-notice .lddw-button:hover {
+  background-color: #349dd7;
+  border-color: #349dd7;
+  color: #fff;
+  fill: #fff;
+}
+
+.lddw-cookies-notice {
+  position: fixed;
+  z-index: 1000;
+  bottom: 10px;
+  left: 10px;
+  width: 300px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+}
+
+.lddw-cookies-notice.lddw-cookies-notice-banner {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 5px;
+}
+
+.lddw-cookies-notice.lddw-cookies-notice-banner .lddw-cookie-title {
+  font-size: 1em;
+}
+
+.lddw-cookies-notice.lddw-cookies-notice-banner p {
+  font-size: .9em;
+  margin: 0;
+}
+
+.lddw-cookies-notice.lddw-cookies-notice-banner .lddw-cookie-buttons {
+  margin-top: 5px;
+}
+
+.lddw-cookies-notice .lddw-cookie-title {
+  color: white;
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+.lddw-cookies-notice p {
+  margin: 10px 0 0 0;
+  line-height: 1.5;
+  color: white;
+}
+
+.lddw-cookies-notice .lddw-cookie-buttons {
+  margin-top: 15px;
+}
+
+.lddw-cookies-notice .lddw-cookie-close {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  cursor: pointer;
+}
+
+.lddw-cookies-notice .lddw-button {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: transparent;
+  font-weight: 300;
+  white-space: nowrap;
+  padding: 6px 12px;
+  line-height: 1.5;
+  transition: background-color 0.2s ease 0s;
+  -moz-user-select: none;
+  color: white;
+  fill: white;
+  border: 1px solid #349dd7;
+}
+
+.lddw-cookies-notice .lddw-button:hover {
+  background-color: #349dd7;
+  border-color: #349dd7;
+  color: #fff;
+  fill: #fff;
+}
