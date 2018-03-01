@@ -6,7 +6,7 @@ How to use it ?
 -------------
 Follow theses steps :
 * Clone the repository `git clone https://github.com/nicolaspetitjean/lddw-cookies-law.git`
-* Rename the folder to lddw_cookieslaw and move it in the `modules` folder of your Prestashop install
+* Rename the folder to `lddw_cookieslaw` and move it in the `modules` folder of your Prestashop install
 * Go to your admin panel and install the module in the `Modules` menu
 
 License

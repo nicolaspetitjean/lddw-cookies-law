@@ -1,3 +1,11 @@
+/**
+ * 2018 http://www.la-dame-du-web.com
+ *
+ * @author    Nicolas PETITJEAN <n.petitjean@la-dame-du-web.com>
+ * @copyright 2018 Nicolas PETITJEAN
+ * @license MIT License
+ */
+
 setCookieNotice = function(element, options) {
     this.box = element;
     this.close_button = element.find('.lddw-cookie-close');

@@ -1,10 +1,10 @@
 <?php
 /**
- *  2017 ModuleFactory.co
+ * 2018 http://www.la-dame-du-web.com
  *
- *  @author    ModuleFactory.co <info@modulefactory.co>
- *  @copyright 2017 ModuleFactory.co
- *  @license   ModuleFactory.co Commercial License
+ * @author    Nicolas PETITJEAN <n.petitjean@la-dame-du-web.com>
+ * @copyright 2018 Nicolas PETITJEAN
+ * @license MIT License
  */
 
 header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');

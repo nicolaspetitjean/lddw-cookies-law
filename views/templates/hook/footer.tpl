@@ -1,3 +1,10 @@
+{**
+* 2018 http://www.la-dame-du-web.com
+*
+* @author    Nicolas PETITJEAN <n.petitjean@la-dame-du-web.com>
+* @copyright 2018 Nicolas PETITJEAN
+* @license MIT License
+*}
 {if !$cookie_setted}
 <div id="lddw-cookie-modal-box" class="lddw-cookies-notice" data-cookies="direction:left">
     <span class="lddw-cookie-close">x</span>
