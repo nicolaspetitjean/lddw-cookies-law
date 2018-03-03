@@ -102,6 +102,22 @@ class lddw_cookieslaw extends Module
                         'name'  => 'name',
                     )
                 ),
+                array(
+                    'type'     => 'select',
+                    'desc'     => 'Specify layout to use.',
+                    'label'    => $this->l('Layout'),
+                    'name'     => 'LDDW_CL_LAYOUT',
+                    'required' => true,
+                    'lang'     => false,
+                    'options'  => array(
+                        'query' => array(
+                            array('id' => 'box', 'name' => $this->l('Square Box')),
+                            array('id' => 'fullwidth', 'name' => $this->l('Banner Fullwidth'))
+                        ),
+                        'id'    => 'id',
+                        'name'  => 'name',
+                    )
+                ),
             ),
             'submit' => array(
                 'title' => $this->l('Save'),
@@ -208,6 +224,13 @@ class lddw_cookieslaw extends Module
                 $errors[] = $this->l('Cookie lifetime value is not correct.');
             }
 
+            // Validate Layout
+            $LDDW_CL_LAYOUT = $submitedValues['LDDW_CL_LAYOUT'];
+            $correct_values = array('box', 'fullwidth');
+            if(!in_array($LDDW_CL_LAYOUT, $correct_values)) {
+                $errors[] = $this->l('Layout value is not correct.');
+            }
+
             // Update.. or not !
             if(empty($errors)) {
                 foreach($submitedValues as $submitedKey => $submitedValue) {
@@ -244,8 +267,8 @@ class lddw_cookieslaw extends Module
 
         // Title and toolbar
         $helper->title = $this->displayName;
-        $helper->show_toolbar = true;        // false -> remove toolbar
-        $helper->toolbar_scroll = true;      // yes - > Toolbar is always visible on the top of the screen.
+        $helper->show_toolbar = true; // false -> remove toolbar
+        $helper->toolbar_scroll = true; // yes - > Toolbar is always visible on the top of the screen.
         $helper->submit_action = 'submit' . $this->name;
         $helper->toolbar_btn = array(
             'save' =>
@@ -274,14 +297,17 @@ class lddw_cookieslaw extends Module
         $id_lang = $this->context->language->id;
         $configValues = $this->getConfigValues();
         $parsed_url = parse_url($this->context->shop->getBaseURL());
+
         $this->smarty->assign(array(
-            'title' => $configValues['LDDW_CL_TITLE'][$id_lang],
-            'message' => $configValues['LDDW_CL_MESSAGE'][$id_lang],
-            'text_button' => $configValues['LDDW_CL_TXT_BUTTON'][$id_lang],
-            'text_more' => $configValues['LDDW_CL_TXTMORE_BUTTON'][$id_lang],
-            'url' => filter_var($configValues['LDDW_CL_LINK'][$id_lang], FILTER_VALIDATE_URL, FILTER_FLAG_PATH_REQUIRED),
-            'expiry' => $configValues['LDDW_CL_EXPIRY'],
-            'domain' => $parsed_url['host'],
+            'title'         => $configValues['LDDW_CL_TITLE'][$id_lang],
+            'message'       => $configValues['LDDW_CL_MESSAGE'][$id_lang],
+            'text_button'   => $configValues['LDDW_CL_TXT_BUTTON'][$id_lang],
+            'text_more'     => $configValues['LDDW_CL_TXTMORE_BUTTON'][$id_lang],
+            'url'           => filter_var($configValues['LDDW_CL_LINK'][$id_lang], FILTER_VALIDATE_URL, FILTER_FLAG_PATH_REQUIRED),
+            'expiry'        => $configValues['LDDW_CL_EXPIRY'],
+            'layout'        => $configValues['LDDW_CL_LAYOUT'],
+            'direction'     => $configValues['LDDW_CL_LAYOUT'] == 'box' ? 'left' : 'bottom',
+            'domain'        => $parsed_url['host'],
             'cookie_setted' => $this->cookie_setted(),
         ));
 
