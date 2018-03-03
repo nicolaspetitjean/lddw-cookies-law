@@ -1,7 +1,7 @@
 /**
  * 2018 http://www.la-dame-du-web.com
  *
- * @author    Nicolas PETITJEAN <n.petitjean@la-dame-du-web.com>
+ * @author Nicolas PETITJEAN <n.petitjean@la-dame-du-web.com>
  * @copyright 2018 Nicolas PETITJEAN
  * @license MIT License
  */
@@ -68,7 +68,6 @@ setCookieNotice.prototype = {
         cookie_value = cookie_value === 'accept';
         document.cookie = 'cookie_notice_accepted=' + cookie_value + ';expires=' + cnLater.toGMTString() + ';domain=' + this.options.domain + ';path=/';
 
-        console.log(document.cookie);
         // Hide message container
         self.close();
     },
@@ -94,6 +93,7 @@ setCookieNotice.prototype = {
 jQuery(function() {
     new setCookieNotice(jQuery('#lddw-cookie-modal-box'), {
         expire: window.lddw_cookieslaw.expire,
-        domain: window.lddw_cookieslaw.domain
+        domain: window.lddw_cookieslaw.domain,
+        direction: window.lddw_cookieslaw.direction
     });
 });
