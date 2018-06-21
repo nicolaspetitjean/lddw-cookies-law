@@ -208,13 +208,13 @@ class lddw_cookieslaw extends Module
             // Validate message
             $LDDW_CL_MESSAGE = $submitedValues['LDDW_CL_MESSAGE'];
             if(!LddwHelper::validateNotEmpty($LDDW_CL_MESSAGE)) {
-                $errors[] = $this->l('Message can\'t be empty.');
+                $errors[] = $this->l('Message can\'t be empty. Don\'t forget to complete all languages installed.' );
             }
 
             // Validate title
             $LDDW_CL_TITLE = $submitedValues['LDDW_CL_TITLE'];
             if(!LddwHelper::validateNotEmpty($LDDW_CL_TITLE)) {
-                $errors[] = $this->l('Title can\'t be empty.');
+                $errors[] = $this->l('Title can\'t be empty. Don\'t forget to complete all languages installed.');
             }
 
             // Validate Expiry
